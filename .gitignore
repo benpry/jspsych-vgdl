@@ -1,0 +1,4 @@
+.DS_Store
+.jspsych-builder
+node_modules
+packaged

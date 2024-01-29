@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "scripts": {
+    "jspsych": "jspsych -e experiment",
+    "start": "npm run jspsych -- run",
+    "build": "npm run jspsych -- build",
+    "jatos": "npm run jspsych -- build --jatos"
+  },
+  "dependencies": {
+    "@jspsych/plugin-fullscreen": "^1.1.2",
+    "@jspsych/plugin-html-keyboard-response": "^1.1.2",
+    "@jspsych/plugin-instructions": "^1.1.4",
+    "@jspsych/plugin-preload": "^1.1.2",
+    "@jspsych/plugin-survey-text": "^1.1.3",
+    "gamejs": "^2.0.2",
+    "jquery": "^3.7.1",
+    "jspsych": "^7.3.1",
+    "scoped-eval": "^0.4.2"
+  },
+  "devDependencies": {
+    "jspsych-builder": "^4.4.0"
+  },
+  "browserslist": ">0.25%, not dead",
+  "babel": {
+    "overrides": [
+      {
+        "test": "./src/gamejs-2.0.3-pre.js",
+        "sourceType": "script"
+      }
+    ]
+  }
+}
